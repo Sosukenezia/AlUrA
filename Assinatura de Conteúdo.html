@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Assinatura de Conteúdo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .plan {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .plan h3 {
+            margin: 0;
+        }
+        .subscribe-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .subscribe-button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Assine o Conteúdo</h1>
+</header>
+
+<main>
+    <h2>Escolha seu Plano</h2>
+
+    <div class="plan">
+        <h3>Plano Básico</h3>
+        <p>R$ 19,99 por mês</p>
+        <p>Acesso a conteúdos exclusivos.</p>
+        <button class="subscribe-button" onclick="subscribe('Básico')">Assinar</button>
+    </div>
+
+    <div class="plan">
+        <h3>Plano Premium</h3>
+        <p>R$ 79,99 por mês</p>
+        <p>Acesso a todos os conteúdos e eventos ao vivo.</p>
+        <button class="subscribe-button" onclick="subscribe('Premium')">Assinar</button>
+    </div>
+
+    <div class="plan">
+        <h3>Plano VIP</h3>
+        <p>R$ 149,99 por mês</p>
+        <p>Acesso total e suporte prioritário.</p>
+        <button class="subscribe-button" onclick="subscribe('VIP')">Assinar</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Site de Assinatura de Conteúdo. Projeto para o Alura</p>
+</footer>
+
+<script>
+    function subscribe(plan) {
+        alert('Você se inscreveu no plano: ' + plan + '!');
+    }
+</script>
+
+</body>
+</html>
